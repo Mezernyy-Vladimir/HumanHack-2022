@@ -1,0 +1,120 @@
+.card-details-tab {
+	font-family: sans-serif;
+	&__header {
+		display: flex;
+		gap: 16px;
+		align-items: center;
+		font-size: 24px;
+		padding: 0 23px;
+	}
+
+	&__wrapper {
+		display: flex;
+		margin: 32px;
+		padding: 16px 23px;
+		background-color: #f2f3ff;
+		border-radius: 5px;
+		max-width: 1217px;
+		column-gap: 16px;
+	}
+
+	&__section + .card-details-tab__section {
+		border-top: 1px solid #e5e5ed;
+		padding-top: 32px;
+	}
+
+	&__cards-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+		padding: 23px;
+	}
+
+	&__card {
+		width: 180px;
+		height: 110px;
+		border-radius: 5px;
+		background-color: #e6e9ff;
+		transition: 0.2s;
+		cursor: pointer;
+
+		&-icon {
+			padding: 16px;
+		}
+
+		&-details {
+			color: #6464f7;
+			text-align: center;
+			letter-spacing: 2px;
+		}
+
+		&:hover {
+			background-color: #cdd2ff;
+		}
+	}
+
+	&__add-card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 180px;
+		height: 110px;
+		border-radius: 5px;
+		border: 1px solid #e6e9ff;
+		color: #6464f7;
+		transition: 0.2s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #cdd2ff;
+		}
+	}
+
+	&__add-card-text {
+		display: flex;
+		gap: 8px;
+	}
+
+	&__sign-plus {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20px;
+		height: 20px;
+		border-radius: 5px;
+		background: #f2f3ff;
+	}
+
+	.enter-amount-block {
+		margin: 16px 23px;
+	}
+
+	//success
+	&__success {
+		width: 100%;
+		height: 50vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 16px;
+		padding-bottom: 10%;
+		color: black;
+
+		&-status {
+			font-size: 24px;
+			margin-bottom: 16px;
+		}
+		&-value {
+			color: #6464f7;
+		}
+		&-message {
+			font-size: 16px;
+			text-align: center;
+		}
+		&-ref {
+			font-size: 12px;
+			color: #898ca6;
+		}
+	}
+}
